@@ -1,0 +1,19 @@
+<script type="text/javascript">
+	function Redirect(){
+		var random = Math.round(Math.random()*99);
+  		var week = new Date().getDay();  
+  		if (random >= 0 && random < 5) {
+  			window.location="https://www.cnhls.com/";
+  		}
+  		else if (week == 0 || week == 1 || week == 2 || week == 5 || week == 6) {  
+  			window.location="https://www.mcdonalds.com.cn/"; 
+		}
+		else if (week == 3) {  
+  			window.location="https://www.bkchina.cn/";  
+		}
+		else if (week == 4) {  
+  			window.location="https://m.kfc.com.cn/";
+		}
+	}
+  	Redirect();
+</script>
